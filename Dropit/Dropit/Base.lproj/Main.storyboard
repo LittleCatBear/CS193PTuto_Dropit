@@ -20,23 +20,38 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
-                                </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="wHI-e9-OVZ" appends="YES" id="icy-bA-M3f"/>
                                 </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lMM-zu-8u7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="IWK-Fb-4ea"/>
+                            <constraint firstAttribute="trailing" secondItem="lMM-zu-8u7" secondAttribute="trailing" id="JoL-tU-7SX"/>
+                            <constraint firstItem="lMM-zu-8u7" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Nfv-YD-D1R"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="lMM-zu-8u7" secondAttribute="bottom" constant="115" id="SD6-XA-SFo"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="lMM-zu-8u7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="IWK-Fb-4ea"/>
+                                <exclude reference="JoL-tU-7SX"/>
+                                <exclude reference="Nfv-YD-D1R"/>
+                                <exclude reference="SD6-XA-SFo"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="lMM-zu-8u7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="IWK-Fb-4ea"/>
+                                <include reference="JoL-tU-7SX"/>
+                                <include reference="Nfv-YD-D1R"/>
+                                <include reference="SD6-XA-SFo"/>
                             </mask>
                         </variation>
                     </view>
