@@ -14,6 +14,7 @@
 		E356CC401A4EBAFF003AED0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E356CC3F1A4EBAFF003AED0B /* Images.xcassets */; };
 		E356CC431A4EBAFF003AED0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E356CC411A4EBAFF003AED0B /* LaunchScreen.xib */; };
 		E356CC4F1A4EBAFF003AED0B /* DropitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E356CC4E1A4EBAFF003AED0B /* DropitTests.m */; };
+		E356CC5A1A526E66003AED0B /* DropitBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = E356CC591A526E66003AED0B /* DropitBehavior.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		E356CC481A4EBAFF003AED0B /* DropitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E356CC4D1A4EBAFF003AED0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E356CC4E1A4EBAFF003AED0B /* DropitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropitTests.m; sourceTree = "<group>"; };
+		E356CC581A526E66003AED0B /* DropitBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropitBehavior.h; sourceTree = "<group>"; };
+		E356CC591A526E66003AED0B /* DropitBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropitBehavior.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				E356CC391A4EBAFF003AED0B /* ViewController.h */,
 				E356CC3A1A4EBAFF003AED0B /* ViewController.m */,
+				E356CC581A526E66003AED0B /* DropitBehavior.h */,
+				E356CC591A526E66003AED0B /* DropitBehavior.m */,
 				E356CC3C1A4EBAFF003AED0B /* Main.storyboard */,
 				E356CC3F1A4EBAFF003AED0B /* Images.xcassets */,
 				E356CC411A4EBAFF003AED0B /* LaunchScreen.xib */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E356CC3B1A4EBAFF003AED0B /* ViewController.m in Sources */,
+				E356CC5A1A526E66003AED0B /* DropitBehavior.m in Sources */,
 				E356CC381A4EBAFF003AED0B /* AppDelegate.m in Sources */,
 				E356CC351A4EBAFF003AED0B /* main.m in Sources */,
 			);
