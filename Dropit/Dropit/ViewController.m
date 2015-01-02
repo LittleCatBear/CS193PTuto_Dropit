@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UIView *gameView;
 @property (strong, nonatomic) UIDynamicAnimator *animator;
 @property (strong, nonatomic) DropitBehavior *dropitBehavior;
+@property (strong, nonatomic) UIAttachmentBehavior *attachment;
+@property (strong, nonatomic) UIView *droppingView;
 
 @end
 
@@ -96,6 +98,10 @@ static const CGSize DROP_SIZE = {40,40};
     [self drop];
 }
 
+- (IBAction)pan:(UIPanGestureRecognizer *)sender
+{
+}
+
 -(void)drop
 {
     CGRect frame;
@@ -108,6 +114,7 @@ static const CGSize DROP_SIZE = {40,40};
     dropview.backgroundColor = [self randomColor];
     [self.gameView addSubview:dropview];
     
+    self.droppingView = dropview;
     [self.dropitBehavior addItem:dropview];
 }
 

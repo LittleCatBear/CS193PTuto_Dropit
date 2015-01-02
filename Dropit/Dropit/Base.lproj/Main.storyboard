@@ -22,6 +22,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="wHI-e9-OVZ" appends="YES" id="icy-bA-M3f"/>
+                                    <outletCollection property="gestureRecognizers" destination="K2A-za-Hhw" appends="YES" id="rcP-Pu-8cD"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -30,17 +31,19 @@
                             <constraint firstItem="lMM-zu-8u7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="IWK-Fb-4ea"/>
                             <constraint firstAttribute="trailing" secondItem="lMM-zu-8u7" secondAttribute="trailing" id="JoL-tU-7SX"/>
                             <constraint firstItem="lMM-zu-8u7" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Nfv-YD-D1R"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="lMM-zu-8u7" secondAttribute="bottom" constant="115" id="SD6-XA-SFo"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="lMM-zu-8u7" secondAttribute="bottom" constant="115" id="SD6-XA-SFo">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="lMM-zu-8u7"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="SD6-XA-SFo"/>
                                 <exclude reference="IWK-Fb-4ea"/>
                                 <exclude reference="JoL-tU-7SX"/>
                                 <exclude reference="Nfv-YD-D1R"/>
-                                <exclude reference="SD6-XA-SFo"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -48,10 +51,10 @@
                                 <include reference="lMM-zu-8u7"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="SD6-XA-SFo"/>
                                 <include reference="IWK-Fb-4ea"/>
                                 <include reference="JoL-tU-7SX"/>
                                 <include reference="Nfv-YD-D1R"/>
-                                <include reference="SD6-XA-SFo"/>
                             </mask>
                         </variation>
                     </view>
@@ -65,6 +68,11 @@
                         <action selector="tap:" destination="vXZ-lx-hvc" id="Kxq-Wi-qsU"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="K2A-za-Hhw">
+                    <connections>
+                        <action selector="pan:" destination="vXZ-lx-hvc" id="alu-AR-PNs"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="379.5" y="304.5"/>
         </scene>
